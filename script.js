@@ -20,7 +20,12 @@ I think I need to:
 
 for (i = 0; i < 256; i++) {
   const newDiv = document.createElement("div");
-  newDiv.textContent = "Div";
+  newDiv.textContent = "div";
   newDiv.classList.add("gridBox");
   document.getElementById("container").appendChild(newDiv);
 }
+
+let changeBox = document.querySelector(".gridBox");
+changeBox.addEventListener("mouseover", function handleMouseOver() {
+  changeBox.style.color = "black";
+});

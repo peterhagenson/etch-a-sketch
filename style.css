@@ -7,6 +7,7 @@
 #container {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
 }
 
 .div-shadow {
@@ -17,4 +18,10 @@
 
 .gridBox {
   border: solid 1px;
+  box-sizing: border-box;
+}
+
+.gridBox:hover {
+  background: black;
+  visibility: visible;
 }
